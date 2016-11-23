@@ -1,5 +1,6 @@
 package com.mirgantrophy.pokemon.players;
 
+
 import com.mirgantrophy.pokemon.combat.CombatMethods;
 
 public class PlayerCharacter implements CombatMethods
@@ -15,6 +16,7 @@ public class PlayerCharacter implements CombatMethods
 		return health;
 	}
 	
+	
 	public void setHealth(int health)
 	{
 		this.health = health;
@@ -23,7 +25,7 @@ public class PlayerCharacter implements CombatMethods
 	@Override
 	public void pelt() 
 	{
-		// TODO Auto-generated method stub
+		
 		
 	}
 	@Override
@@ -38,5 +40,4 @@ public class PlayerCharacter implements CombatMethods
 		// TODO Auto-generated method stub
 		
 	}
-
 }
