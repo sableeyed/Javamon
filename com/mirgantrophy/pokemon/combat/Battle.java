@@ -4,11 +4,22 @@ import com.mirgantrophy.pokemon.players.*;
 
 public class Battle 
 {
+	public boolean inCombat;
 	public Battle(PlayerCharacter Player, PlayerCharacter NPC)
 	{
 		System.out.println("Battle Scenario Created");
-		System.out.println("Your health: " + Player.getHealth());
-		System.out.println("NPC health: " + NPC.getHealth());
 	}
-
+	
+	public void battle(PlayerCharacter Player, PlayerCharacter NPC)
+	{
+		while(Player.getHealth() > 1 && NPC.getHealth() > 1)
+		{
+			System.out.println("Inside battle loop");
+		}
+	}
+	
+	public int getChoice(PlayerCharacter Player)
+	{
+		return Player.getChoice();
+	}
 }
