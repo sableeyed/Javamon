@@ -2,6 +2,7 @@ package com.mirgantrophy.pokemon.players;
 
 
 import java.util.Random;
+import java.util.Scanner;
 
 import com.mirgantrophy.pokemon.combat.CombatMethods;
 
@@ -42,5 +43,13 @@ public class PlayerCharacter implements CombatMethods
 	{
 		int dmg = rand.nextInt(5) + 10;
 		return dmg;
+	}
+	
+	public int getChoice()
+	{
+		Scanner scan = new Scanner(System.in);
+		int x = scan.nextInt();
+		scan.close();
+		return x;
 	}
 }
