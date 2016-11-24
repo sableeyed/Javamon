@@ -49,7 +49,7 @@ public class PlayerCharacter implements CombatMethods
 	{
 		Scanner scan = new Scanner(System.in);
 		int x = scan.nextInt();
-		scan.close();
+		//scan.close();
 		return x;
 	}
 }
