@@ -1,10 +1,13 @@
 package com.mirgantrophy.pokemon.players;
 
 
+import java.util.Random;
+
 import com.mirgantrophy.pokemon.combat.CombatMethods;
 
 public class PlayerCharacter implements CombatMethods
 {
+	private Random rand = new Random();
 	private int health;
 	public PlayerCharacter()
 	{
@@ -23,21 +26,19 @@ public class PlayerCharacter implements CombatMethods
 	}
 	
 	@Override
-	public void pelt() 
+	public int pelt() 
 	{
-		
-		
+		int dmg = rand.nextInt(30);
+		return dmg;
 	}
 	@Override
-	public void bodySlam() 
+	public int bodySlam() 
 	{
-		// TODO Auto-generated method stub
-		
+		return 0;
 	}
 	@Override
-	public void heal() 
+	public int heal() 
 	{
-		// TODO Auto-generated method stub
-		
+		return 0;
 	}
 }
