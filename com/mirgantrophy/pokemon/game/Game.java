@@ -16,6 +16,5 @@ public class Game
 		PlayerCharacter pc = new PlayerCharacter();
 		PlayerCharacter npc = new PlayerCharacter();
 		Battle bScenario = new Battle(pc, npc);
-		System.out.println(pc.pelt());
 	}
 }

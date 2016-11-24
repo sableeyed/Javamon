@@ -28,17 +28,19 @@ public class PlayerCharacter implements CombatMethods
 	@Override
 	public int pelt() 
 	{
-		int dmg = rand.nextInt(30);
+		int dmg = rand.nextInt(13) + 8;
 		return dmg;
 	}
 	@Override
 	public int bodySlam() 
 	{
-		return 0;
+		int dmg = rand.nextInt(25) + 10;
+		return dmg;
 	}
 	@Override
 	public int heal() 
 	{
-		return 0;
+		int dmg = rand.nextInt(5) + 10;
+		return dmg;
 	}
 }
