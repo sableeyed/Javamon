@@ -14,6 +14,7 @@ public class Game
 	public static void main(String[] args)
 	{
 		PlayerCharacter pc = new PlayerCharacter();
-		Battle bScenario = new Battle(pc);
+		PlayerCharacter npc = new PlayerCharacter();
+		Battle bScenario = new Battle(pc, npc);
 	}
 }
