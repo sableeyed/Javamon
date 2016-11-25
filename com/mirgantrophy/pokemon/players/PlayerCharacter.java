@@ -49,6 +49,7 @@ public class PlayerCharacter implements CombatMethods
 	{
 		Scanner scan = new Scanner(System.in);
 		int x = scan.nextInt();
+		//scan.close(); //Can anyone tell me why this causes a NoSuchElementException
 		return x;
 	}
 }

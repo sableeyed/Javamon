@@ -63,10 +63,4 @@ public class Battle
 			
 		} while(Player.getHealth() > 1 && NPC.getHealth() > 1);
 	}
-	
-	/* Do i even need this method? getChoice() is public, so I don't think I do? */
-	public int getChoice(PlayerCharacter Player)
-	{
-		return Player.getChoice();
-	} 
 }
