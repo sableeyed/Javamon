@@ -17,14 +17,29 @@ public class Battle
 		/* The battle only needs to last while one player is alive */
 		do
 		{
-			do /*we need to make sure the player chooses a valid move */
+			switch(Player.getChoice())
 			{
-				System.out.print("What move will you make? ");
-				if(Player.getChoice() == 1)
-				{
-					System.out.println("proper logic");
-				}
-			} while(Player.getChoice() < 1 || Player.getChoice() > 3);
+			case 1:
+				System.out.println("Choice 1");
+				System.out.println("NPC Health: " + NPC.getHealth());
+				NPC.setHealth(NPC.getHealth() - Player.pelt());
+				System.out.println("NPC Health: " + NPC.getHealth());
+				break;
+			case 2:
+				System.out.println("Choice 2");
+				System.out.println("NPC Health: " + NPC.getHealth());
+				NPC.setHealth(NPC.getHealth() - Player.bodySlam());
+				System.out.println("NPC Health: " + NPC.getHealth());
+				break;
+			case 3:
+				System.out.println("Choice 3");
+				System.out.println("Your Health: " + Player.getHealth());
+				Player.setHealth(Player.getHealth() + Player.heal());
+				System.out.println("Your Health: " + Player.getHealth());
+				break;
+			default:
+				System.out.println("Plz make valid choice");
+			}
 			
 			/* now we need to get the NPC choice */
 			
@@ -38,11 +53,11 @@ public class Battle
 				int x = rand.nextInt(1);
 				if(x == 0)
 				{
-					NPC.pelt(); /* we still need to make sure we set the player health accordingly */
+					Player.setHealth(NPC.pelt()); /* we still need to make sure we set the player health accordingly */
 				}
 				else
 				{
-					NPC.bodySlam();
+					Player.setHealth(NPC.bodySlam());
 				}
 			}
 			
