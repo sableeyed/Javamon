@@ -1,6 +1,6 @@
 package io.valhala.javamon.pokemon;
 
-public class Oddsih extends Pokemon {
+public abstract class Oddsih extends Pokemon {
 
 	public Oddsih() {
 		super("Oddish", 45, 50, 55, 30, 75, true, 43);

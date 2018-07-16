@@ -1,6 +1,6 @@
 package io.valhala.javamon.pokemon;
 
-public class Sandslash extends Pokemon {
+public abstract class Sandslash extends Pokemon {
 
 	public Sandslash() {
 		super("Sandslash", 75, 100, 110, 65, 55, false, 28);

@@ -1,6 +1,6 @@
 package io.valhala.javamon.pokemon;
 
-public class Snorlax extends Pokemon {
+public abstract class Snorlax extends Pokemon {
 
 	public Snorlax() {
 		super("Snorlax", 160, 110, 65, 30, 65, false, 143);

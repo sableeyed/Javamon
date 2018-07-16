@@ -1,6 +1,6 @@
 package io.valhala.javamon.pokemon;
 
-public class Dragonite extends Pokemon {
+public abstract class Dragonite extends Pokemon {
 
 	public Dragonite() {
 		super("Dragonite", 91, 134, 95, 80, 100, false, 149);

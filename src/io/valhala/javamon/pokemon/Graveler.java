@@ -1,6 +1,6 @@
 package io.valhala.javamon.pokemon;
 
-public class Graveler extends Pokemon {
+public abstract class Graveler extends Pokemon {
 
 	public Graveler( ) {
 		super("Graveler",55,95,115,35,45,true,75);

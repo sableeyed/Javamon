@@ -1,6 +1,6 @@
 package io.valhala.javamon.pokemon;
 
-public class Bellsprout extends Pokemon {
+public abstract class Bellsprout extends Pokemon {
 //I have to do this to the rest. Also maybe abstract because we have
 //WildPokemon, PlayerPokemon, NPCPokemon
 	public Bellsprout() {

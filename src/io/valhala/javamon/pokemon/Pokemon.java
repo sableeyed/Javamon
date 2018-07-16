@@ -6,6 +6,7 @@ public abstract class Pokemon {
 	private float hp, attack, defense, speed, special;
 	private boolean hasEvolution;
 	private int dexNumber;
+	//private Type type1, type2;
 	
 	public Pokemon(String n, float h, float a, float d, float s, float ss, boolean hh, int dd) {
 		this.name = n;

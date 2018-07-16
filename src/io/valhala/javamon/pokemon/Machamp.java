@@ -1,6 +1,6 @@
 package io.valhala.javamon.pokemon;
 
-public class Machamp extends Pokemon {
+public abstract class Machamp extends Pokemon {
 
 	public Machamp() {
 		super("Machamp", 90, 130, 80, 55, 65, false, 68);

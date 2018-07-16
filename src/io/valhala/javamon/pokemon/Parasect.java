@@ -1,6 +1,6 @@
 package io.valhala.javamon.pokemon;
 
-public class Parasect extends Pokemon {
+public abstract class Parasect extends Pokemon {
 
 	public Parasect() {
 		super("Parasect", 60, 95, 80, 30, 80, false, 47);
