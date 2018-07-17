@@ -15,6 +15,7 @@ public enum AbilityType {
 	FLYING,
 	FIRE,
 	BUG,
+	ROCK,
 	ELECTRIC;
 
 	private String type;

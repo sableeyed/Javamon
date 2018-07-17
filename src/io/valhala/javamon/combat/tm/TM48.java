@@ -8,7 +8,7 @@ public abstract class TM48 extends CombatAbility {
 
 	public TM48() {
 		super.name = "Rock Slide";
-		super.type = AbilityType.GROUND; //?
+		super.type = AbilityType.ROCK;
 		super.category = AbilityCategory.PHYSICAL;
 		super.power = (int) 75;
 		super.accuracy = (float) 90.0;
