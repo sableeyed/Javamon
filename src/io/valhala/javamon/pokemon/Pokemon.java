@@ -32,7 +32,7 @@ public abstract class Pokemon {
 	
 	public String getType() {
 		if(!type2.equals(null)) {
-			return type1+"/"+type2.toString();
+			return type1.toString()+"/"+type2.toString();
 		}
 		else {
 			return type1.toString();
