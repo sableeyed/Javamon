@@ -3,7 +3,7 @@ package io.valhala.javamon.pokemon;
 public abstract class Ditto extends Pokemon {
 
 	public Ditto() {
-		super("Ditto", 48, 48, 48, 48, 48, false, 132);
+		super("Ditto", 48, 48, 48, 48, 48, false, 132,Type.NORMAL,null);
 		// TODO Auto-generated constructor stub
 	}
 

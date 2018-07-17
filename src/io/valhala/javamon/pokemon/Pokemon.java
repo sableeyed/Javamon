@@ -6,9 +6,9 @@ public abstract class Pokemon {
 	private float hp, attack, defense, speed, special;
 	private boolean hasEvolution;
 	private int dexNumber;
-	//private Type type1, type2;
+	private Type type1, type2;
 	
-	public Pokemon(String n, float h, float a, float d, float s, float ss, boolean hh, int dd) {
+	public Pokemon(String n, float h, float a, float d, float s, float ss, boolean hh, int dd,Type t1, Type t2) {
 		this.name = n;
 		this.hp = h;
 		this.attack = a;
@@ -17,6 +17,26 @@ public abstract class Pokemon {
 		this.special = ss;
 		this.hasEvolution = hh;
 		this.dexNumber = dd;
+		this.type1 = t1;
+		this.type2 = t2;
+	}
+	
+	public void setType1(Type t) {
+		this.type1 = t;
+	}
+	
+	public void setType2(Type t) {
+		this.type2 = t;
+	}
+	
+	
+	public String getType() {
+		if(!type2.equals(null)) {
+			return type1+"/"+type2.toString();
+		}
+		else {
+			return type1.toString();
+		}
 	}
 	
 	public String getName() {
