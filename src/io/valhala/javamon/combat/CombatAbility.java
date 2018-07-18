@@ -1,4 +1,5 @@
 package io.valhala.javamon.combat;
+
 // 1/256 certainty
 public abstract class CombatAbility {
 

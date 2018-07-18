@@ -1,5 +1,7 @@
 package io.valhala.javamon.pokemon;
 
+import io.valhala.javamon.pokemon.type.Type;
+
 public abstract class Pokemon {
 	
 	private String name;
