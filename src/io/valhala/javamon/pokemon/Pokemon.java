@@ -1,5 +1,6 @@
 package io.valhala.javamon.pokemon;
 
+import io.valhala.javamon.pokemon.evolution.EvolutionMethod;
 import io.valhala.javamon.pokemon.type.Type;
 
 public abstract class Pokemon {
@@ -9,6 +10,7 @@ public abstract class Pokemon {
 	private boolean hasEvolution;
 	private int dexNumber;
 	private Type type1, type2;
+	private EvolutionMethod method;
 	
 	public Pokemon(String n, float h, float a, float d, float s, float ss, boolean hh, int dd,Type t1, Type t2) {
 		this.name = n;
@@ -23,6 +25,35 @@ public abstract class Pokemon {
 		this.type2 = t2;
 	}
 	
+	public Pokemon(String n, float h, float a, float d, float s, float ss, boolean hh, EvolutionMethod method, int dd, Type t1, Type t2) {
+		this.name = n;
+		this.hp = h;
+		this.attack = a;
+		this.defense = d;
+		this.speed = s;
+		this.special = ss;
+		this.hasEvolution = hh;
+		this.dexNumber = dd;
+		this.type1 = t1;
+		this.type2 = t2;
+		this.method = method;
+	}
+	
+	public String toString() {
+		
+		if(!(method == null)) {
+			return "Name: " + getName() + "\nHP: " + getHp() + "\nAttack: " + getAttack() + "\nDefense: " + getDefense() + 
+					"\nSpeed: " + getSpeed() + "\nSpecial: " + getSpecial() + "\nEvolves: " + isHasEvolution() + "\nDex Number: " + getDexNumber() +
+					"\nType: "+ getType() +"\nMoE: " + getMethod();
+		}
+		else {
+			return "Name: " + getName() + "\nHP: " + getHp() + "\nAttack: " + getAttack() + "\nDefense: " + getDefense() + 
+					"\nSpeed: " + getSpeed() + "\nSpecial: " + getSpecial() + "\nEvolves: " + isHasEvolution() + "\nDex Number: " + getDexNumber() +
+					"\nType: "+ getType();
+		}
+		
+	}
+	
 	public void setType1(Type t) {
 		this.type1 = t;
 	}
@@ -31,9 +62,13 @@ public abstract class Pokemon {
 		this.type2 = t;
 	}
 	
+	public String getMethod() {
+		return method.toString();
+	}
+	
 	
 	public String getType() {
-		if(!type2.equals(null)) {
+		if(!(type2 == null)) {
 			return type1.toString()+"/"+type2.toString();
 		}
 		else {
@@ -104,4 +139,5 @@ public abstract class Pokemon {
 	public void setDexNumber(int dexNumber) {
 		this.dexNumber = dexNumber;
 	}
+	
 }
