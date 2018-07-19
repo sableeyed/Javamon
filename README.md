@@ -1,3 +1,5 @@
+![TeamCity (simple build status)](https://img.shields.io/teamcity/http/teamcity.jetbrains.com/s/bt345.svg)
+
 # Disclaimer
 I'd like to start out by saying this project is for educational purposes only and all respective trademarks belong to Nintendo, GameFreak and The Pokemon Company.
 
