@@ -1,11 +1,10 @@
 package io.valhala.javamon.overworld;
 
 import java.util.List;
-
-import io.valhala.javamon.item.GroundItem;
+import io.valhala.javamon.item.Item;
 
 public class Map {
 	
 	private String name;
-	private static List<GroundItem> itemsOnMap; //whenever the map is recreated we dont want new data in the array
+	private static List<Item> itemsOnMap; //whenever the map is recreated we dont want new data in the array
 }
