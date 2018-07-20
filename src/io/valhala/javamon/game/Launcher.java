@@ -1,6 +1,6 @@
 package io.valhala.javamon.game;
 
-import io.valhala.javamon.inventory.GroundItem;
+import io.valhala.javamon.item.GroundItem;
 import io.valhala.javamon.pokemon.Pokemon;
 import io.valhala.javamon.pokemon.skeleton.Abra;
 

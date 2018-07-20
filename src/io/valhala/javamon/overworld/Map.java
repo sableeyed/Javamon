@@ -2,7 +2,7 @@ package io.valhala.javamon.overworld;
 
 import java.util.List;
 
-import io.valhala.javamon.inventory.GroundItem;
+import io.valhala.javamon.item.GroundItem;
 
 public class Map {
 	

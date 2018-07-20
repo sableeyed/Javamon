@@ -1,4 +1,4 @@
-package io.valhala.javamon.inventory;
+package io.valhala.javamon.item;
 
 import io.valhala.javamon.overworld.Location;
 
