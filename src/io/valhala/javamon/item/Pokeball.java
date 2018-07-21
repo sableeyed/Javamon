@@ -12,7 +12,7 @@ public class Pokeball extends BallAbstraction {
 	private final int buyPrice= 200, sellPrice = 100;
 	
 	public Pokeball() {
-		super("Poké Ball", Ball.POKE_BALL);
+		super("Poké Ball", Ball.POKE_BALL, 255);
 	}
 	
 	public String toString() {return super.toString();}
