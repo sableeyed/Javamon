@@ -6,9 +6,7 @@ import io.valhala.javamon.item.Pokeball;
 
 public class Launcher {
 	public static void main(String[] args) {
-		Backpack b = new Backpack();
-		b.addToInventory(new Pokeball());
-		Game g = new Game("Pokemon Java Technical Preview", 640, 480);
+		Game g = new Game("Pokemon Java Technical Preview",200, 200);
 		g.start();
 	}
 }
